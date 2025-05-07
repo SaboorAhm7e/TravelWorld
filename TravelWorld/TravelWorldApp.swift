@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct TravelWorldApp: App {
+    @AppStorage("isSplahPresent") var isSplahPresent : Bool = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isSplahPresent {
+                HomeView()
+            } else {
+                SplashView()
+            }
+            
         }
     }
 }

@@ -7,18 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D35431022DCBB905006953CD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35431012DCBB905006953CD /* Colors.xcassets */; };
+		D35431052DCBB9EC006953CD /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35431042DCBB9EC006953CD /* Color+Extension.swift */; };
 		D3BEFB842DCBA9C7000CE70F /* TravelWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BEFB832DCBA9C7000CE70F /* TravelWorldApp.swift */; };
 		D3BEFB862DCBA9C7000CE70F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BEFB852DCBA9C7000CE70F /* ContentView.swift */; };
 		D3BEFB882DCBA9C8000CE70F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3BEFB872DCBA9C8000CE70F /* Assets.xcassets */; };
 		D3BEFB8B2DCBA9C8000CE70F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3BEFB8A2DCBA9C8000CE70F /* Preview Assets.xcassets */; };
+		D3BEFB932DCBAA00000CE70F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BEFB922DCBAA00000CE70F /* HomeView.swift */; };
+		D3BEFB952DCBABA9000CE70F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BEFB942DCBABA9000CE70F /* SplashView.swift */; };
+		D3BEFB992DCBAECD000CE70F /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BEFB982DCBAECD000CE70F /* MainButtonStyle.swift */; };
+		D3BEFB9C2DCBB3E9000CE70F /* OleoScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3BEFB9B2DCBB3E9000CE70F /* OleoScript-Bold.ttf */; };
+		D3BEFB9F2DCBB43C000CE70F /* OoohBaby-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3BEFB9E2DCBB43C000CE70F /* OoohBaby-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D35431012DCBB905006953CD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D35431042DCBB9EC006953CD /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		D3BEFB802DCBA9C7000CE70F /* TravelWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3BEFB832DCBA9C7000CE70F /* TravelWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelWorldApp.swift; sourceTree = "<group>"; };
 		D3BEFB852DCBA9C7000CE70F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D3BEFB872DCBA9C8000CE70F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3BEFB8A2DCBA9C8000CE70F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3BEFB922DCBAA00000CE70F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D3BEFB942DCBABA9000CE70F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D3BEFB982DCBAECD000CE70F /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
+		D3BEFB9B2DCBB3E9000CE70F /* OleoScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OleoScript-Bold.ttf"; sourceTree = "<group>"; };
+		D3BEFB9D2DCBB404000CE70F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D3BEFB9E2DCBB43C000CE70F /* OoohBaby-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OoohBaby-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D35431032DCBB9D9006953CD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D35431042DCBB9EC006953CD /* Color+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D3BEFB772DCBA9C7000CE70F = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +74,13 @@
 		D3BEFB822DCBA9C7000CE70F /* TravelWorld */ = {
 			isa = PBXGroup;
 			children = (
+				D3BEFB9D2DCBB404000CE70F /* Info.plist */,
+				D3BEFB962DCBAEAB000CE70F /* Utility */,
+				D3BEFB912DCBA9D4000CE70F /* View */,
 				D3BEFB832DCBA9C7000CE70F /* TravelWorldApp.swift */,
 				D3BEFB852DCBA9C7000CE70F /* ContentView.swift */,
 				D3BEFB872DCBA9C8000CE70F /* Assets.xcassets */,
+				D35431012DCBB905006953CD /* Colors.xcassets */,
 				D3BEFB892DCBA9C8000CE70F /* Preview Content */,
 			);
 			path = TravelWorld;
@@ -65,6 +92,42 @@
 				D3BEFB8A2DCBA9C8000CE70F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3BEFB912DCBA9D4000CE70F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3BEFB922DCBAA00000CE70F /* HomeView.swift */,
+				D3BEFB942DCBABA9000CE70F /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D3BEFB962DCBAEAB000CE70F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D35431032DCBB9D9006953CD /* Extension */,
+				D3BEFB9A2DCBB273000CE70F /* Font */,
+				D3BEFB972DCBAEB2000CE70F /* Shape */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D3BEFB972DCBAEB2000CE70F /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				D3BEFB982DCBAECD000CE70F /* MainButtonStyle.swift */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		D3BEFB9A2DCBB273000CE70F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D3BEFB9E2DCBB43C000CE70F /* OoohBaby-Regular.ttf */,
+				D3BEFB9B2DCBB3E9000CE70F /* OleoScript-Bold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +188,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35431022DCBB905006953CD /* Colors.xcassets in Resources */,
+				D3BEFB9C2DCBB3E9000CE70F /* OleoScript-Bold.ttf in Resources */,
 				D3BEFB8B2DCBA9C8000CE70F /* Preview Assets.xcassets in Resources */,
+				D3BEFB9F2DCBB43C000CE70F /* OoohBaby-Regular.ttf in Resources */,
 				D3BEFB882DCBA9C8000CE70F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BEFB992DCBAECD000CE70F /* MainButtonStyle.swift in Sources */,
+				D35431052DCBB9EC006953CD /* Color+Extension.swift in Sources */,
+				D3BEFB932DCBAA00000CE70F /* HomeView.swift in Sources */,
+				D3BEFB952DCBABA9000CE70F /* SplashView.swift in Sources */,
 				D3BEFB862DCBA9C7000CE70F /* ContentView.swift in Sources */,
 				D3BEFB842DCBA9C7000CE70F /* TravelWorldApp.swift in Sources */,
 			);
@@ -272,6 +342,8 @@
 				DEVELOPMENT_TEAM = 4HMHL946U5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelWorld/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +373,8 @@
 				DEVELOPMENT_TEAM = 4HMHL946U5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelWorld/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
