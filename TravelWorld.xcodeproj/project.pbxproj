@@ -18,6 +18,7 @@
 		D3BEFB992DCBAECD000CE70F /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BEFB982DCBAECD000CE70F /* MainButtonStyle.swift */; };
 		D3BEFB9C2DCBB3E9000CE70F /* OleoScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3BEFB9B2DCBB3E9000CE70F /* OleoScript-Bold.ttf */; };
 		D3BEFB9F2DCBB43C000CE70F /* OoohBaby-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3BEFB9E2DCBB43C000CE70F /* OoohBaby-Regular.ttf */; };
+		D3FFCE152DD0801D0060F781 /* TerritoryCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FFCE142DD0801D0060F781 /* TerritoryCapsule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D3BEFB9B2DCBB3E9000CE70F /* OleoScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OleoScript-Bold.ttf"; sourceTree = "<group>"; };
 		D3BEFB9D2DCBB404000CE70F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D3BEFB9E2DCBB43C000CE70F /* OoohBaby-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OoohBaby-Regular.ttf"; sourceTree = "<group>"; };
+		D3FFCE142DD0801D0060F781 /* TerritoryCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerritoryCapsule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		D3BEFB822DCBA9C7000CE70F /* TravelWorld */ = {
 			isa = PBXGroup;
 			children = (
+				D3FFCE132DD07FF60060F781 /* UI Component */,
 				D3BEFB9D2DCBB404000CE70F /* Info.plist */,
 				D3BEFB962DCBAEAB000CE70F /* Utility */,
 				D3BEFB912DCBA9D4000CE70F /* View */,
@@ -128,6 +131,14 @@
 				D3BEFB9B2DCBB3E9000CE70F /* OleoScript-Bold.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		D3FFCE132DD07FF60060F781 /* UI Component */ = {
+			isa = PBXGroup;
+			children = (
+				D3FFCE142DD0801D0060F781 /* TerritoryCapsule.swift */,
+			);
+			path = "UI Component";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 			files = (
 				D3BEFB992DCBAECD000CE70F /* MainButtonStyle.swift in Sources */,
 				D35431052DCBB9EC006953CD /* Color+Extension.swift in Sources */,
+				D3FFCE152DD0801D0060F781 /* TerritoryCapsule.swift in Sources */,
 				D3BEFB932DCBAA00000CE70F /* HomeView.swift in Sources */,
 				D3BEFB952DCBABA9000CE70F /* SplashView.swift in Sources */,
 				D3BEFB862DCBA9C7000CE70F /* ContentView.swift in Sources */,
