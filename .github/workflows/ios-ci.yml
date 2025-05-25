@@ -20,14 +20,14 @@ jobs:
     - name: Build app
       run: |
         xcodebuild clean build \
-          -workspace YourApp.xcworkspace \  # OR use -project if not using workspaces
-          -scheme YourScheme \
+          -workspace TravelWorld.xcworkspace \  # OR use -project if not using workspaces
+          -scheme TravelWorld \
           -destination 'platform=iOS Simulator,name=iPhone 15' \
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
     - name: Run tests
       run: |
         xcodebuild test \
-          -workspace YourApp.xcworkspace \
-          -scheme YourScheme \
+          -workspace TravelWorld.xcworkspace \
+          -scheme TravelWorld \
           -destination 'platform=iOS Simulator,name=iPhone 15'
