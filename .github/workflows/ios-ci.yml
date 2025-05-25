@@ -8,19 +8,16 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: macos-14 # Uses Xcode 15.3 by default
 
     steps:
-    - name: Checkout repo
+    - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Xcode
-      run: sudo xcode-select -s /Applications/Xcode_15.3.app # or whatever version you need
-
-    - name: Build app
+    - name: Build the app
       run: |
         xcodebuild clean build \
-          -workspace TravelWorld.xcworkspace \  # OR use -project if not using workspaces
+          -workspace TravelWorld.xcworkspace \
           -scheme TravelWorld \
           -destination 'platform=iOS Simulator,name=iPhone 15' \
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
