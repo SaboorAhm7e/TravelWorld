@@ -18,7 +18,7 @@ struct TerritoryCapsule: View {
         ZStack(alignment:.center) {
             Capsule()
                 .fill(item == selectedTerretoryType ? Color.btnClr : (colorScheme == .dark ? Color.secondary.opacity(0.5) : Color.white))
-                .animation(.easeIn(duration:0.2))
+                .animation(.easeIn(duration:0.2),value: selectedTerretoryType)
                 .shadow(color: Color.black.opacity(0.3), radius: 8, x: 0, y: 5)
             VStack {
                 ZStack {
