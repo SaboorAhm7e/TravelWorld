@@ -17,7 +17,7 @@ jobs:
     - name: Build the app
       run: |
         xcodebuild clean build \
-          -workspace TravelWorld.xcworkspace \
+          -project TravelWorld.xcodeproj \
           -scheme TravelWorld \
           -destination 'platform=iOS Simulator,name=iPhone 15' \
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
