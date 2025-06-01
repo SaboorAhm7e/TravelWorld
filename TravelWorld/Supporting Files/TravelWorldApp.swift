@@ -13,7 +13,7 @@ struct TravelWorldApp: App {
     var body: some Scene {
         WindowGroup {
             if isSplahPresent {
-                HomeView()
+                ContentView()
             } else {
                 SplashView()
             }

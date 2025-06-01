@@ -34,14 +34,27 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
+            ScrollView(.vertical,showsIndicators: false) {
             VStack(spacing:30) {
                
                 territoryView
                 
                 categoryView
                 
+                ScrollView(.horizontal,showsIndicators: false) {
+                    HStack(spacing:20) {
+                        ForEach(0..<4,id: \.self) { item in
+                            HomeGridItem()
+                                .frame(width: 250, height: 330)
+                        }
+                    }
+                    .padding(.vertical,25)
+                    .padding(.horizontal,5)
+                }
+                
                 Spacer()
             }
+        }
             .padding(.horizontal,16)
             .navigationTitle("Places")
             .toolbar {
@@ -123,11 +136,11 @@ struct HomeView: View {
 // MARK: - Preview
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
+     //   Group {
             HomeView()
                 .preferredColorScheme(.light)
-            HomeView()
-                .preferredColorScheme(.dark)
-        }
+//            HomeView()
+//                .preferredColorScheme(.dark)
+//        }
     }
 }

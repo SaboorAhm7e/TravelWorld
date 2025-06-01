@@ -8,39 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Namespace private var animationNamespace
-    @State private var isExpanded = false
 
     var body: some View {
-        VStack {
-            if isExpanded {
-                expandedView
-            } else {
-                collapsedView
-            }
-        }
-        .onTapGesture {
-            withAnimation {
-                isExpanded.toggle()
-            }
+        TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Explore")
+                }
+            Text("Favorite")
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Explore")
+                }
+                
+            Text("Discover")
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Explore")
+                }
+            Text("Profile")
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Explore")
+                }
         }
     }
 
-    @ViewBuilder
-    private var collapsedView: some View {
-        RoundedRectangle(cornerRadius: 25)
-            .fill(Color.blue)
-            .frame(width: 100, height: 100)
-            .matchedGeometryEffect(id: "expandingView", in: animationNamespace)
-    }
-
-    @ViewBuilder
-    private var expandedView: some View {
-        RoundedRectangle(cornerRadius: 25)
-            .fill(Color.blue)
-            .frame(width: 300, height: 300)
-            .matchedGeometryEffect(id: "expandingView", in: animationNamespace)
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
